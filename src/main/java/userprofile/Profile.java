@@ -1,3 +1,5 @@
+package userprofile;
+
 /**
  * Profile represents a user profile for a training planner application.
  * It holds information provided by the user such as height, weight,
@@ -7,9 +9,6 @@
  * @author Johannes Nupen Theigen
  * @version 2024.10.09
  */
-
-package userprofile;
-
 public class Profile
 {
     private int height;
@@ -125,4 +124,4 @@ public class Profile
             this.totalWorkoutPerWeek = totalWorkoutPerWeek;
         }
     }
-}
+  }
