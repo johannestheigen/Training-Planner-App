@@ -6,7 +6,7 @@ The Training Planner App is a simple prompt-based training app where users can c
 
 ## Features
 
-- **User Profiles**: Currently the only feature of the application.
+- **User Profiles** and  **Exercise type**
 
 ## Project Status
 This project is currently a student initiative and is in the early stages of development. 

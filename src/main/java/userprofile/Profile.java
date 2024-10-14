@@ -8,7 +8,7 @@ package userprofile;
  *
  * @author Johannes Nupen Theigen
  * @since 2024.10.14
- * @version 0.0.2
+ * @version 0.0.3
  */
 public class Profile {
   private int height;
@@ -49,13 +49,14 @@ public class Profile {
      * an IllegalArgumentException is thrown.
      *
      * @param height The height of the user must be non-negative.
+     * @throws IllegalArgumentException if the value is less than zero.
      */
 
-  public void setHeight(int height) {
+  public void setHeight(int height) throws IllegalArgumentException {
     if (height < 0) {
       throw new IllegalArgumentException("Invalid input, height cannot be negative.");
     }
-      this.height = height;
+    this.height = height;
   }
 
   /**
@@ -73,13 +74,14 @@ public class Profile {
      * an IllegalArgumentException is thrown.
      *
      * @param weight The weight of the user must be non-negative.
+     * @throws IllegalArgumentException if the value is less than zero.
      */
 
-  public void setWeight(float weight) {
+  public void setWeight(float weight) throws IllegalArgumentException {
     if (weight < 0) {
       throw new IllegalArgumentException("Invalid input, weight cannot be negative.");
     }
-      this.weight = weight;
+    this.weight = weight;
   }
 
   /**
@@ -97,13 +99,14 @@ public class Profile {
      * an IllegalArgumentException is thrown.
      *
      * @param gender The gender of the user must not be null or empty.
+     * @throws IllegalArgumentException if the input is null or empty
      */
 
-  public void setGender(String gender) {
+  public void setGender(String gender) throws IllegalArgumentException {
     if (gender == null || gender.isEmpty()) {
       throw new IllegalArgumentException("No input, gender cannot be null or empty.");
     }
-      this.gender = gender;
+    this.gender = gender;
   }
 
   /**
@@ -120,12 +123,13 @@ public class Profile {
      * an IllegalArgumentException is thrown.
      *
      * @param totalWorkoutPerWeek The total workouts per week of the user must be non-negative.
+     * @throws IllegalArgumentException if the value is less than zero
      */
 
-  public void setTotalWorkoutPerWeek(int totalWorkoutPerWeek) {
+  public void setTotalWorkoutPerWeek(int totalWorkoutPerWeek) throws IllegalArgumentException {
     if (totalWorkoutPerWeek < 0) {
       throw new IllegalArgumentException("Invalid input, total workout cannot be negative");
     }
-      this.totalWorkoutPerWeek = totalWorkoutPerWeek;
+    this.totalWorkoutPerWeek = totalWorkoutPerWeek;
   }
 }

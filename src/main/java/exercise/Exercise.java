@@ -37,12 +37,13 @@ public class Exercise {
 
   /**
    * Sets the exercise type. If the exercise type is null, empty or blank,
-   * an IllegalArgumenException is thrown.
+   * an IllegalArgumentException is thrown.
 
    * @param exerciseType the exercise type.
+   * @throws IllegalArgumentException if the exercise type is null or empty.
    */
-  public void setExerciseType(String exerciseType) {
-    if (exerciseType == null || exerciseType.isEmpty() || exerciseType.isBlank()) {
+  public void setExerciseType(String exerciseType) throws IllegalArgumentException {
+    if (exerciseType == null || exerciseType.isEmpty()) {
       throw new IllegalArgumentException("Exercise type cannot be null, empty or blank");
     }
     this.exerciseType = exerciseType;
@@ -58,12 +59,13 @@ public class Exercise {
   }
 
   /**
-   * Sets the total sets of the exercise. If the total sets are negative, an
+   * Sets the total sets of the exercise. If the total sets of the exercise are negative, an
    * IllegalArgumentException is thrown.
 
    * @param totalSets the total sets of the exercise.
+   * @throws IllegalArgumentException if the total sets of the exercise are negative
    */
-  public void setTotalSets(int totalSets) {
+  public void setTotalSets(int totalSets) throws IllegalArgumentException {
     if (totalSets < 0) {
       throw new IllegalArgumentException("Total reps cannot be negative");
     }
@@ -80,12 +82,13 @@ public class Exercise {
   }
 
   /**
-   * Sets the total reps of the exercise. If the total reps are negative, an
+   * Sets the total reps of the exercise. If the total reps of the exercise are negative, an
    * IllegalArgumentException is thrown.
 
    * @param totalReps the total reps of the exercise.
+   * @throws IllegalArgumentException if the total reps of the exercise are negative
    */
-  public void setTotalReps(int totalReps) {
+  public void setTotalReps(int totalReps) throws IllegalArgumentException {
     if (totalReps < 0) {
       throw new IllegalArgumentException("Total reps cannot be negative");
     }
@@ -106,8 +109,9 @@ public class Exercise {
    * IllegalArgumentException is thrown.
 
    * @param weight the weight of the exercise.
+   * @throws IllegalArgumentException if the weight of the exercise is negative
    */
-  public void setWeight(int weight) {
+  public void setWeight(int weight) throws IllegalArgumentException {
     if (weight < 0) {
       throw new IllegalArgumentException("Weight cannot be negative");
     }
