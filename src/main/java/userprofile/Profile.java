@@ -7,7 +7,7 @@ package userprofile;
  * to generate a workout plan that fits the user.
  *
  * @author Johannes Nupen Theigen
- * @version 2024.10.09
+ * @version 0.0.02 (2024.10.14)
  */
 public class Profile {
   private int height;
@@ -101,8 +101,7 @@ public class Profile {
      */
 
   public void setGender(String gender) {
-    boolean isEmpty = (gender == null || gender.isEmpty());
-    if (isEmpty) {
+    if (gender == null || gender.isEmpty()) {
       throw new IllegalArgumentException("No input, gender cannot be null or empty.");
     } else {
       this.gender = gender;
