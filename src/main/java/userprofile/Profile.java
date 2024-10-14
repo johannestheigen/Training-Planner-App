@@ -7,7 +7,8 @@ package userprofile;
  * to generate a workout plan that fits the user.
  *
  * @author Johannes Nupen Theigen
- * @version 0.0.02 (2024.10.14)
+ * @since 2024.10.14
+ * @version 0.0.2
  */
 public class Profile {
   private int height;
