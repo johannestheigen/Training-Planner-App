@@ -53,9 +53,8 @@ public class Profile {
   public void setHeight(int height) {
     if (height < 0) {
       throw new IllegalArgumentException("Invalid input, height cannot be negative.");
-    } else {
-      this.height = height;
     }
+      this.height = height;
   }
 
   /**
@@ -78,9 +77,8 @@ public class Profile {
   public void setWeight(float weight) {
     if (weight < 0) {
       throw new IllegalArgumentException("Invalid input, weight cannot be negative.");
-    } else {
-      this.weight = weight;
     }
+      this.weight = weight;
   }
 
   /**
@@ -103,9 +101,8 @@ public class Profile {
   public void setGender(String gender) {
     if (gender == null || gender.isEmpty()) {
       throw new IllegalArgumentException("No input, gender cannot be null or empty.");
-    } else {
-      this.gender = gender;
     }
+      this.gender = gender;
   }
 
   /**
@@ -127,8 +124,7 @@ public class Profile {
   public void setTotalWorkoutPerWeek(int totalWorkoutPerWeek) {
     if (totalWorkoutPerWeek < 0) {
       throw new IllegalArgumentException("Invalid input, total workout cannot be negative");
-    } else {
-      this.totalWorkoutPerWeek = totalWorkoutPerWeek;
     }
+      this.totalWorkoutPerWeek = totalWorkoutPerWeek;
   }
 }
