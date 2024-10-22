@@ -35,6 +35,10 @@ public class Profile {
     // Set the total workouts per week provided by the user
   }
 
+  public Profile() {
+
+  }
+
   /**
     * Returns the height of the user.
 

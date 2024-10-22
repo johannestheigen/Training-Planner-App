@@ -1,5 +1,6 @@
 package edu.ntnu.idi.bidata.userexercise;
 
+
 /**
  * UserExercise represents an exercise for the training planner application.
  * It consists of exercise type, total sets, total reps and weight.
@@ -23,6 +24,10 @@ public class Exercise {
     setTotalSets(totalSets); // Set the total sets provided by user.
     setTotalRepetitions(totalRepetitions); // Set the total reps provided by user.
     setWeight(weight); // Set the weight provided by user.
+  }
+
+  public Exercise() {
+
   }
 
   /**
