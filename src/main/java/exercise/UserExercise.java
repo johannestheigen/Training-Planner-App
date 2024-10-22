@@ -1,14 +1,14 @@
 package exercise;
 
 /**
- * Exercise represents an exercise for the training planner application.
+ * UserExercise represents an exercise for the training planner application.
  * It consists of exercise type, total sets, total reps and weight.
 
  * @author Johannes Nupen Theigen
- * @since 10.14.2024
- * @version 0.0.2
+ * @since 10.22.2024
+ * @version 0.0.3
  */
-public class Exercise {
+public class UserExercise {
   private String exerciseType;
   private int totalSets;
   private int totalReps;
@@ -19,11 +19,11 @@ public class Exercise {
 
    * @param exerciseType the exercise type
    */
-  public Exercise(String exerciseType) {
+  public UserExercise(String exerciseType, int totalSets, int totalReps, float weight) {
     setExerciseType(exerciseType); // Set the exerciseType provided by user.
-    totalSets = 0; // Default value for total sets.
-    totalReps = 0; // Default value for total reps.
-    weight = 0; // Default value for weight.
+    setTotalSets(totalSets); // Set the total sets provided by user.
+    setTotalReps(totalReps); // Set the total reps provided by user.
+    setWeight(weight); // Set the weight provided by user.
   }
 
   /**
@@ -111,7 +111,7 @@ public class Exercise {
    * @param weight the weight of the exercise.
    * @throws IllegalArgumentException if the weight of the exercise is negative
    */
-  public void setWeight(int weight) throws IllegalArgumentException {
+  public void setWeight(float weight) throws IllegalArgumentException {
     if (weight < 0) {
       throw new IllegalArgumentException("Weight cannot be negative");
     }
