@@ -6,23 +6,22 @@ package exercise;
 
  * @author Johannes Nupen Theigen
  * @since 10.22.2024
- * @version 0.0.3
  */
 public class UserExercise {
-  private String exerciseType;
+  private String nameOfExercise;
   private int totalSets;
-  private int totalReps;
+  private int totalRepetitions;
   private float weight;
 
   /**
    * Creates a new exercise.
 
-   * @param exerciseType the exercise type
+   * @param nameOfExercise the exercise type
    */
-  public UserExercise(String exerciseType, int totalSets, int totalReps, float weight) {
-    setExerciseType(exerciseType); // Set the exerciseType provided by user.
+  public UserExercise(String nameOfExercise, int totalSets, int totalRepetitions, float weight) {
+    setNameOfExercise(nameOfExercise); // Set the exerciseType provided by user.
     setTotalSets(totalSets); // Set the total sets provided by user.
-    setTotalReps(totalReps); // Set the total reps provided by user.
+    setTotalRepetitions(totalRepetitions); // Set the total reps provided by user.
     setWeight(weight); // Set the weight provided by user.
   }
 
@@ -31,22 +30,22 @@ public class UserExercise {
 
    * @return the exercise type.
    */
-  public String getExerciseType() {
-    return exerciseType;
+  public String getNameOfExercise() {
+    return nameOfExercise;
   }
 
   /**
    * Sets the exercise type. If the exercise type is null, empty or blank,
    * an IllegalArgumentException is thrown.
 
-   * @param exerciseType the exercise type.
+   * @param nameOfExercise the exercise type.
    * @throws IllegalArgumentException if the exercise type is null or empty.
    */
-  public void setExerciseType(String exerciseType) throws IllegalArgumentException {
-    if (exerciseType == null || exerciseType.isEmpty()) {
+  public void setNameOfExercise(String nameOfExercise) throws IllegalArgumentException {
+    if (nameOfExercise == null || nameOfExercise.isEmpty()) {
       throw new IllegalArgumentException("Exercise type cannot be null, empty or blank");
     }
-    this.exerciseType = exerciseType;
+    this.nameOfExercise = nameOfExercise;
   }
 
   /**
@@ -77,22 +76,22 @@ public class UserExercise {
 
    * @return the total reps of the exercise.
    */
-  public int getTotalReps() {
-    return totalReps;
+  public int getTotalRepetitions() {
+    return totalRepetitions;
   }
 
   /**
    * Sets the total reps of the exercise. If the total reps of the exercise are negative, an
    * IllegalArgumentException is thrown.
 
-   * @param totalReps the total reps of the exercise.
+   * @param totalRepetitions the total reps of the exercise.
    * @throws IllegalArgumentException if the total reps of the exercise are negative
    */
-  public void setTotalReps(int totalReps) throws IllegalArgumentException {
-    if (totalReps < 0) {
+  public void setTotalRepetitions(int totalRepetitions) throws IllegalArgumentException {
+    if (totalRepetitions < 0) {
       throw new IllegalArgumentException("Total reps cannot be negative");
     }
-    this.totalReps = totalReps;
+    this.totalRepetitions = totalRepetitions;
   }
 
   /**
