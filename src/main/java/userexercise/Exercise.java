@@ -1,4 +1,4 @@
-package exercise;
+package userexercise;
 
 /**
  * UserExercise represents an exercise for the training planner application.
@@ -7,7 +7,7 @@ package exercise;
  * @author Johannes Nupen Theigen
  * @since 10.22.2024
  */
-public class UserExercise {
+public class Exercise {
   private String nameOfExercise;
   private int totalSets;
   private int totalRepetitions;
@@ -18,7 +18,7 @@ public class UserExercise {
 
    * @param nameOfExercise the exercise type
    */
-  public UserExercise(String nameOfExercise, int totalSets, int totalRepetitions, float weight) {
+  public Exercise(String nameOfExercise, int totalSets, int totalRepetitions, float weight) {
     setNameOfExercise(nameOfExercise); // Set the exerciseType provided by user.
     setTotalSets(totalSets); // Set the total sets provided by user.
     setTotalRepetitions(totalRepetitions); // Set the total reps provided by user.
