@@ -1,4 +1,4 @@
-package userexercise;
+package edu.ntnu.idi.bidata.userexercise;
 
 /**
  * UserExercise represents an exercise for the training planner application.

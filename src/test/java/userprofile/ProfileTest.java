@@ -1,6 +1,8 @@
 package userprofile;
 
 import static org.junit.jupiter.api.Assertions.*;
+
+import edu.ntnu.idi.bidata.userprofile.Profile;
 import org.junit.jupiter.api.*;
 class ProfileTest
 {

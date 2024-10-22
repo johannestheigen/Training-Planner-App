@@ -1,4 +1,4 @@
-package userprofile;
+package edu.ntnu.idi.bidata.userprofile;
 
 /**
  * Profile represents a user profile for a training planner application.
